@@ -87,5 +87,20 @@ namespace Calculator
                 valueTextBox.Text = "";
             }
         }
+
+        private void clearAllButton_Click(object sender, EventArgs e)
+        {
+            valueTextBox.Text = "";
+            memoryValueLabel.Text = "0";
+        }
+
+        private void clearOneButton_Click(object sender, EventArgs e)
+        {
+            string textBox = valueTextBox.Text;
+            if (!(textBox.Length == 0))
+            {
+                valueTextBox.Text = textBox.Substring(0, textBox.Length - 1);
+            }
+        }
     }
 }

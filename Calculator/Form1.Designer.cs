@@ -46,6 +46,8 @@
             this.valueTextBox = new System.Windows.Forms.TextBox();
             this.memoryValueLabel = new System.Windows.Forms.Label();
             this.infoLabel = new System.Windows.Forms.Label();
+            this.clearAllButton = new System.Windows.Forms.Button();
+            this.clearOneButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -244,11 +246,33 @@
             this.infoLabel.TabIndex = 17;
             this.infoLabel.Text = "Please proceed with calculations...";
             // 
+            // clearAllButton
+            // 
+            this.clearAllButton.Location = new System.Drawing.Point(167, 198);
+            this.clearAllButton.Name = "clearAllButton";
+            this.clearAllButton.Size = new System.Drawing.Size(75, 100);
+            this.clearAllButton.TabIndex = 18;
+            this.clearAllButton.Text = "CE";
+            this.clearAllButton.UseVisualStyleBackColor = true;
+            this.clearAllButton.Click += new System.EventHandler(this.clearAllButton_Click);
+            // 
+            // clearOneButton
+            // 
+            this.clearOneButton.Location = new System.Drawing.Point(167, 92);
+            this.clearOneButton.Name = "clearOneButton";
+            this.clearOneButton.Size = new System.Drawing.Size(75, 100);
+            this.clearOneButton.TabIndex = 19;
+            this.clearOneButton.Text = "C";
+            this.clearOneButton.UseVisualStyleBackColor = true;
+            this.clearOneButton.Click += new System.EventHandler(this.clearOneButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 551);
+            this.Controls.Add(this.clearOneButton);
+            this.Controls.Add(this.clearAllButton);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.memoryValueLabel);
             this.Controls.Add(this.valueTextBox);
@@ -294,6 +318,8 @@
         private System.Windows.Forms.TextBox valueTextBox;
         private System.Windows.Forms.Label memoryValueLabel;
         private System.Windows.Forms.Label infoLabel;
+        private System.Windows.Forms.Button clearAllButton;
+        private System.Windows.Forms.Button clearOneButton;
     }
 }
 
