@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
@@ -266,7 +266,7 @@
             this.clearOneButton.UseVisualStyleBackColor = true;
             this.clearOneButton.Click += new System.EventHandler(this.clearOneButton_Click);
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -291,8 +291,10 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximumSize = new System.Drawing.Size(694, 589);
+            this.MinimumSize = new System.Drawing.Size(694, 589);
+            this.Name = "Calculator";
+            this.Text = "Calc";
             this.ResumeLayout(false);
             this.PerformLayout();
 
